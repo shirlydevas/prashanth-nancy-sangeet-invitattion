@@ -14,7 +14,25 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Prashanth & Nancy's Sangeet Night",
-  description: "Join us for an evening of music, dance, and love",
+  description: "Join us for an evening of music, dance, and love.",
+  openGraph: {
+    title: "Prashanth & Nancy's Sangeet Night",
+    description: "Join us for an evening of music, dance, and love.",
+    images: [
+      {
+        url: "/images/screen-image.png",
+        width: 1600,
+        height: 900,
+        alt: "Prashanth & Nancy Sangeet Night Celebration",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prashanth & Nancy's Sangeet Night",
+    description: "Join us for an evening of music, dance, and love.",
+    images: ["/images/screen-image.png"],
+  },
 };
 
 export default function RootLayout({
