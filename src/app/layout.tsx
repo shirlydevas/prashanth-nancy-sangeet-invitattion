@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  "https://prashanth-nancy-sangeet-invitation.netlify.app";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -15,9 +19,11 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Prashanth & Nancy's Sangeet Night",
   description: "Join us for an evening of music, dance, and love.",
+  metadataBase: new URL(siteUrl),
   openGraph: {
     title: "Prashanth & Nancy's Sangeet Night",
     description: "Join us for an evening of music, dance, and love.",
+    url: siteUrl,
     images: [
       {
         url: "/images/screen-image.png",
