@@ -82,10 +82,10 @@ function SplashScreen() {
     <div className="fixed inset-0 flex items-center justify-center z-50 overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/screen-image.jpg"
+          src="/images/screen-image.png"
           alt="Sangeet Celebration"
           fill
-          className="object-cover object-top"
+          className="object-cover"
           priority
         />
       </div>
@@ -277,7 +277,7 @@ function InvitationCard({
                 <div className="text-5xl md:text-6xl mb-2 animate-bounce-subtle">
                   {emoji}
                 </div>
-                <h2 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">
+                <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-lg">
                   {title}
                 </h2>
               </div>
