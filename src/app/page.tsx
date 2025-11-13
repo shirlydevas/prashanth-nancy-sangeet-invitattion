@@ -353,7 +353,7 @@ function InvitationCard({
                 >
                   <span className="text-white text-xl">📍</span>
                 </div>
-                <div className="sm:w-full w-[74%]">
+                <div className="sm:w-[85%] w-[74%]">
                   <p className="text-xs text-gray-500 uppercase tracking-wide font-semibold">
                     Venue
                   </p>
